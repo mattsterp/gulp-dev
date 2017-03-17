@@ -1,9 +1,9 @@
-var themename = 'the-themes-name';  // Chnage to the name of the theme
+var themename = 'mission-control';
 
 var gulp = require('gulp'),
         // Prepare and optimize code etc
         autoprefixer = require('autoprefixer'),
-        browsersync = require('browsder-sync').create(),
+        browserSync = require('browser-sync').create(),
         image = require('gulp-image'),
         jshint =  require('gulp-jshint'),
         postcss = require('gulp-postcss'),
@@ -57,7 +57,7 @@ gulp.task('javascript', function() {
 gulp.task('watch', function() {
     browserSync.init({
         open: 'external',
-        proxy: 'http://theme-dev-url/',   // Change this proxy URL to the URL of the site you're working on.
+        proxy: 'http://theme-dev/',
         port: 8080
     });
     gulp.watch([root + '**/*.css', root +'**/*.scss' ], ['css']);
