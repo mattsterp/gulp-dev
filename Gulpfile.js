@@ -1,4 +1,4 @@
-var themename = 'mission-control';
+var themename = 'xxxx-themename';  // Change to name of theme
 
 var gulp = require('gulp'),
         // Prepare and optimize code etc
@@ -57,7 +57,7 @@ gulp.task('javascript', function() {
 gulp.task('watch', function() {
     browserSync.init({
         open: 'external',
-        proxy: 'http://theme-dev/',
+        proxy: 'http://xxxx-your-dev-url/',  // Enter the development url
         port: 8080
     });
     gulp.watch([root + '**/*.css', root +'**/*.scss' ], ['css']);
