@@ -5,3 +5,4 @@ My WordPress theming Gulpfile.js
 * There are two lines to edit in Gulpfile.js 
 * Rename themename var to match the themes name
 * Change the proxy URL (line 61) to the URL of the current live version of the site you're working on.
+* Fire watch tasks by entering "gulp" into terminal.
